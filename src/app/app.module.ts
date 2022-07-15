@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { AgGridDemoComponent } from './agGrid/ag-grid-demo/ag-grid-demo.component';
 import {AgGridModule} from "ag-grid-angular";
 import {HttpClientModule} from "@angular/common/http";
+import {HttpClientInMemoryWebApiModule} from "angular-in-memory-web-api";
+import {InMemoryDataServiceService} from "./agGrid/ag-grid-demo/in-memory-data-service.service";
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import {HttpClientModule} from "@angular/common/http";
     imports: [
         BrowserModule,
         AgGridModule,
-        HttpClientModule
+        HttpClientModule,
+
     ],
   providers: [],
   bootstrap: [AppComponent]
